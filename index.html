@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+        *{
+            margin: 0;
+            font-family: Exo;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-tl bg-no-repeat h-screen w-screen from-sky-500 to-purple-500 flex flex-col justify-evenly items-center">
+    <h1 class="font-bold text-6xl">Palindrome Checker</h1>
+    <div id="container" class="h-2/5 w-2/6 bg-white flex flex-col justify-evenly items-center rounded-lg">
+        <div id="input-check" class="w-full flex justify-center">
+            <input id="text-input" class="border-b-4 rounded border-sky-500 w-1/4 px-2"></input>
+            <button id="check-btn" onclick="pal()" class="text-sky-600 ml-3">Check</button>
+        </div>
+        <div id="result" class="text-2xl"></div>
+    </div>
+    <div class="w-2/6 bg-white h-16 text-center pt-2 rounded-xl mb-16">
+        <p>
+        "A palindrome is a word or phrase that reads the same backward as forward, regardless of punctuation, capitalization, or spaces."
+        </p>
+    </div>
+
+    <footer class="footer fixed bottom-0">
+        <p>Designed By <span class="underline font-bold"><a href="https://github.com/xbaelal" target="_blank" rel="noopener noreferrer">Bilal Muhammad Ahmed</a></span></span></p>
+    </footer>
+ <script src="script.js"></script> </body>
+</html>
